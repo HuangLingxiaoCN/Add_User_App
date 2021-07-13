@@ -19,7 +19,7 @@ const AddUser = (props) => {
       // convert age into a number
       return;
     }
-    console.log(username, age);
+    props.onAddUser(username, age);
     setUsername("");
     setAge("");
   };
